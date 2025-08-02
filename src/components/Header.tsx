@@ -5,9 +5,9 @@ import SearchInput from './SearchInput'
 
 const Header:FC = () => {
   return (
-    <nav className='flex justify-between items-center py-1'>
+    <nav className='flex justify-between px-4 items-center py-1'>
     <Link href="/">
-      <div className='relative w-[200px] h-[50px]'>
+      <div className='relative  w-[200px] h-[50px]'>
         <Image src="/img/news-u-logo.webp" alt="logo" fill className='object-contain' />
       </div>
     </Link>

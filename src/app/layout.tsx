@@ -36,14 +36,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={trispace.className}>
-        <main className='px-2 md:px-20'>
-          <Header />
-          <Navbar />
-          <section className="flex justify-between">
-            {children}
+        <Header />
+        <Navbar />
+        <main className="flex flex-col md:flex-row gap-6 mt-4 px-2 md:px-20 py-4">
+          {/* Left Sidebar: Trending/Tags */}
+          <aside className="hidden md:block w-1/5 px-2">
+            {/* Add Trending/Tags component here */}
+          </aside>
+          {/* Main Content */}
+          <section className="flex-1 px-2">{children}</section>
+          {/* Right Sidebar: RandomNews */}
+          <aside className="w-full md:w-1/4 px-2">
             <RandomNews />
-          </section>
+          </aside>
         </main>
+        {/* Add <Footer /> here if you create one */}
       </body>
     </html>
   )

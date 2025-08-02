@@ -2,8 +2,8 @@ import { getNewsSearch } from '@/api'
 import Article from '@/components/Article'
 import { removeDuplicateData } from '@/utils'
 
-const Indonesia = async () => {
-  const newsWorld = await getNewsSearch("indonesia")
+const India = async () => {
+  const newsWorld = await getNewsSearch("india")
   const filterArticles = removeDuplicateData(newsWorld)
 
   return (
@@ -17,4 +17,4 @@ const Indonesia = async () => {
   )
 }
 
-export default Indonesia
+export default India
